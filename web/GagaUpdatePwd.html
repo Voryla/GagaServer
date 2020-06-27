@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaga修改密码</title>
+</head>
+<body>
+<div align="center">
+    <form action="/GagaServer/updatePassword" style="margin-top: 20%" method="post">
+        用户名： <input onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" type="text" name="user"> <br>
+        当前密码:<input onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" type="oldPwd" name="oldPwd"><br>
+        新密码:&emsp;<input onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" type="newPwd" name="newPwd"><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<input id="bt_upDate" name="getMethod" type="submit" value="修改密码">
+    </form>
+
+</div>
+</body>
+</html>

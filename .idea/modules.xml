@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Gaga/Gaga.iml" filepath="$PROJECT_DIR$/../Gaga/Gaga.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GagaServer.iml" filepath="$PROJECT_DIR$/GagaServer.iml" />
+    </modules>
+  </component>
+</project>

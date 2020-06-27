@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- 配置log4j -->
+    <servlet>
+        <servlet-name>lodLog4j</servlet-name>
+        <servlet-class>com.zwk.log4j.Log4jInit</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>lodLog4j</servlet-name>
+    <url-pattern>/lodLog4j</url-pattern>
+    </servlet-mapping>
+    <!-- 开启登陆服务 -->
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.zwk.server.LoginServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 注册账号-->
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.zwk.server.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 注册账号-->
+    <servlet>
+        <servlet-name>updatePassword</servlet-name>
+        <servlet-class>com.zwk.server.UpdatePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatePassword</servlet-name>
+        <url-pattern>/updatePassword</url-pattern>
+    </servlet-mapping>
+
+</web-app>

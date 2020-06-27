@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tallGaga (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Gaga/lib/tallGaga.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

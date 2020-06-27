@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaga用户注册</title>
+</head>
+<body>
+<div align="center">
+    <form action="/GagaServer/registerServlet" style="margin-top: 20%"  method="post">
+        昵称： <input onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" type="text" name="name"> <br>
+        用户名：<input onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" type="text" name="user"> <br>
+        密码:&emsp;<input onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" type="password" name="pwd"><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" name="getMethod" value="注册">
+
+    </form>
+
+</div>
+</body>
+</html>
